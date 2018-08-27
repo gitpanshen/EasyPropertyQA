@@ -1,0 +1,12 @@
+{ 
+   "properties":[
+     {
+        "name":"Brookfield",
+        "address":"161 Bay st"
+     }, 
+     {
+        "name":"Exiger",
+        "address":"48 Yonge st"
+     }  
+   ]
+}

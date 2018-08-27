@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noLib": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "e2e"
+  },
+  "exclude": [
+    "node_modules",
+    "e2e"
+  ]
+}

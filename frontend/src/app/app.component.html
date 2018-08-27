@@ -1,0 +1,44 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Welcome to {{ title }}!</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 style="display: inline">Properties</h2>
+      <button type="button" class="btn btn-default pull-right" style="margin-left: 5px;" (click)="reloadClicked()">
+        <i class="fa fa-refresh"></i>
+      </button>
+      <button type="button" class="btn btn-default pull-right" (click)="addNewPropertyClicked()">Add New</button>
+    </div>
+    <div class="panel-body">
+      <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let prop of properties">
+            <td>{{prop.name}}</td>
+            <td>{{prop.address}}</td>
+            <td>
+              <button type="button" class="btn btn-default btn-xs pull-right" (click)="editPropertyClicked(prop)">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+{
+    "name": "easypropertymanagement",
+    "version": "1.0.0",
+    "description": "A SaaS server for managing rental properties",
+    "main": "index.js",
+    "scripts": {
+        "formatpkg": "jsonlint package.json -i -t '    '",
+        "e2e:api": "ts-node node_modules/jasmine/bin/jasmine.js JASMINE_CONFIG_PATH=e2e.api/jasmine.e2e.json",
+        "e2e:app": "webdriver-manager update --gecko false; protractor ./e2e.app/protractor.conf.js",
+        "e2e:app:headless": "webdriver-manager update --gecko false; protractor ./e2e.app/protractor.headless.conf.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "SuiteSpot Technology Inc.",
+    "license": "MIT",
+    "dependencies": {
+        "amqplib": "^0.5.2",
+        "jsonwebtoken": "^7.4.1",
+        "lodash": "^4.17.4",
+        "moment": "^2.19.1",
+        "moment-timezone": "^0.5.14",
+        "reflect-metadata": "^0.1.10",
+        "request": "^2.81.0",
+        "request-promise": "^4.2.2",
+        "sha.js": "^2.4.8",
+        "shortid": "^2.2.8",
+        "winston": "^2.3.1"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^2.6.0",
+        "@types/jsonwebtoken": "^7.2.1",
+        "@types/lodash": "^4.14.76",
+        "@types/ms": "^0.7.30",
+        "@types/request-promise": "^4.1.39",
+        "@types/shortid": "0.0.29",
+        "@types/winston": "^2.3.3",
+        "concurrently": "^3.5.0",
+        "istanbul": "^1.1.0-alpha.1",
+        "jasmine": "^2.8.0",
+        "jasmine-console-reporter": "^2.0.1",
+        "jasmine-reporters": "^2.2.1",
+        "jasmine-spec-reporter": "^4.2.1",
+        "jsonlint": "^1.6.2",
+        "nodemon": "^1.11.0",
+        "npm-run-all": "^4.1.2",
+        "nyc": "^11.2.1",
+        "protractor": "^5.1.1",
+        "request-debug": "^0.2.0",
+        "ts-node": "^3.1.0",
+        "tslint": "^5.7.0",
+        "typescript": "^2.5.3",
+        "wd": "^1.10.1"
+    }
+}

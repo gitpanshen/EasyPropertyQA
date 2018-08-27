@@ -1,0 +1,32 @@
+# Project
+dist/
+dist.test/
+reports/
+coverage/
+target/
+.nyc_output/
+
+# Symlinks
+src/core/
+
+# IntelliJ project files
+*.iws
+*.ipr
+.idea/
+
+# eclipse project file
+.settings/
+.classpath
+.project
+
+# MACOS
+.DS_Store
+
+# Node
+node_modules/
+
+# TypeScript
+.tscache/
+typings/
+
+chromedriver/
